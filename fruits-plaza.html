@@ -16,6 +16,7 @@
                 $.ajax({
                     url: 'http://www.sevenplaza.co.jp/shops/fruits-plaza/',
                     type: 'GET',
+                    dataType: 'jsonp',
                     success: function(res) {
                         $.each(['div.shop-hero', 'section.main', 'section.basic-info'], function(idx, val) {
                             $(res).find(val).each(function(){
