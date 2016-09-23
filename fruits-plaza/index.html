@@ -22,7 +22,8 @@
                     success: function(res) {
                         $.each(['div.shop-hero', 'section.main', 'section.basic-info'], function(idx, val) {
                             $(res).find(val).each(function(){
-                                $(val).append($(this).html());
+                                // $(val).append($(this).html());
+                                $($(this).html()).appendTo(val);
                             });
                         });                    
                         $('div.shop-hero > div').each(function() {
