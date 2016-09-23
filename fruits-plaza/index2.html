@@ -20,7 +20,7 @@
                     url: 'http://www.sevenplaza.co.jp/shops/fruits-plaza/',
                     type: 'GET',
                     success: function(res) {
-                        alert("a");
+                        alert(res);
                         $.each(['div.shop-hero', 'section.main', 'section.basic-info'], function(idx, val) {
                             $(res).find(val).each(function(){
                                 // $(val).append($(this).html());
