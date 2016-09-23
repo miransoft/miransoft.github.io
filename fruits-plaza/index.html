@@ -28,6 +28,7 @@
                         $('div.shop-hero > div').each(function() {
                             var str = $(this).attr('style');
                             var res = str.replace('media', 'http://www.sevenplaza.co.jp/media');
+                            alert(res);
                             $(this).attr('style', res);
                         });
                         $('img').each(function() {
